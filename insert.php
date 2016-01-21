@@ -60,7 +60,11 @@
                 + '&email=' + email + '&gender=' + gender + '&page=signup';
                 $.ajax({
                     type: "POST",
+<<<<<<< HEAD
                     url: "ajax/registration.php",
+=======
+                    url: "ajax/save_details.php",
+>>>>>>> 3ea91a58820df17897b8aaa740579a56f53cc160
                     data: dataString,
                     cache: false,
                     beforeSend: function() 
@@ -69,13 +73,21 @@
                     },
                     success: function(response)
                     {
+<<<<<<< HEAD
                     /* $("#fname").val("");
+=======
+                     /* $("#fname").val("");
+>>>>>>> 3ea91a58820df17897b8aaa740579a56f53cc160
                        $("#lname").val("");
                        $("#password").val("");
                        $("#mobile").val("");
                        $("#email").val("");
+<<<<<<< HEAD
                        $("#gender").val("");
                     */
+=======
+                       $("#gender").val("");*/
+>>>>>>> 3ea91a58820df17897b8aaa740579a56f53cc160
 
                        $("#signup_status").hide().fadeIn('slow').html(response);
                    }
